@@ -145,7 +145,7 @@ export default function App() {
           <Route  path="/loginScreen" element={<LoginForm login={login}/>}/>
           <Route path="/articles" element={ token ? 
             <>
-              <ArticleForm articles={articles} setArticles={setArticles} formValues={formValues} updateArticle={updateArticle} currentArticleId={currentArticleId} postArticle={postArticle}/>
+              <ArticleForm setCurrentArticleId={setCurrentArticleId} articles={articles} setArticles={setArticles} formValues={formValues} updateArticle={updateArticle} currentArticleId={currentArticleId} postArticle={postArticle}/>
               <Articles articles={articles} getArticles={getArticles} deleteArticle={deleteArticle}  setCurrentArticleId={setCurrentArticleId}/>
             </>
           : <Navigate to="/loginScreen" replace/>} />
