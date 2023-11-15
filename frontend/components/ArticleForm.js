@@ -52,11 +52,6 @@ export default function ArticleForm(props) {
       setValues(initialFormValues);
     }
   }
-  //   currentArticleId ? {updateArticle(currentArticleId, values)}
-  //     : postArticle(values);
-  //     
-  // }
-
   const isDisabled = () => {
     // ✨ implement
     // Make sure the inputs have some values
